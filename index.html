@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item List with Search</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            font-size: 16px;
+            line-height: 1; /* Set line-height to 1 for equal height */
+        }
+        .search-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px; /* Set font-size to match input */
+            line-height: 1; /* Set line-height to 1 for equal height */
+        }
+        .item-list {
+            list-style: none;
+            padding: 0;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 10px;
+        }
+        .item-info {
+            flex: 1;
+        }
+        .item-title {
+            font-weight: bold;
+        }
+        .item-description {
+            color: #555;
+        }
+        .favorite-button {
+            background-color: #ff5733;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meal App</h1>
+        <a href="favrouite.html"> <!-- Update the href attribute to the correct page URL -->
+            <button id="favorite-meals-button" class="search-button" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">My Favorite Meals</button>
+        </a>
+    </header>
+    <div class="container">
+     <div class="search-box">
+    <input type="text" id="search-input" class="search-input" placeholder="Search...">
+    <button id="search-button" class="search-button">Search</button>
+</div>
+        <ul class="item-list">
+            <!-- Example item -->
+          
+        </ul>
+    </div>
+    <script src="fetchscript.js"></script>
+
+</body>
+</html>
